@@ -51,9 +51,6 @@ function cubic(n) {
   }
 }
 
-
-
-
 // Exponential - O(2^n)
 function exponential_2n(n) {
   if (n === 1) return;
@@ -67,7 +64,6 @@ function exponential_3n(n) {
   exponential_3n(n - 1);
   exponential_3n(n - 1);
 }
-
 
 // Factorial - O(n!)
 function factorial(n) {
