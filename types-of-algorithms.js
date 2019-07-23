@@ -10,7 +10,6 @@ function constant_2(n) {
 }
 
 // Logrithmic - O(log(n))
-
 function logarithmic(n) {
   if (n <= 1) return;
   logarithmic(n / 2);
@@ -33,4 +32,48 @@ function loglinear(n) {
   }
   loglinear(n / 2);
   loglinear(n / 2);
+}
+
+// Polynomial - O(n^2)
+function quadratic(n){
+  for (let i = 1; i <= n; i++) {
+    for (let j = 1; j <= n; j++){
+    }
+  }
+}
+
+function cubic(n) {
+  for (let i = 1; i <= n; i++) {
+    for (let j = 1; j <= n; j++) {
+      for (let k = 1; k <= n; k++) {
+      }
+    }
+  }
+}
+
+
+
+
+// Exponential - O(2^n)
+function exponential_2n(n) {
+  if (n === 1) return;
+  exponential_2n(n - 1);
+  exponential_2n(n - 1);
+}
+
+function exponential_3n(n) {
+  if (n === 0) return;
+  exponential_3n(n - 1);
+  exponential_3n(n - 1);
+  exponential_3n(n - 1);
+}
+
+
+// Factorial - O(n!)
+function factorial(n) {
+  if (n === 1) return;
+
+  for (let i = 1; i <= n; i++){
+    factorial(n - 1);
+  }
 }
