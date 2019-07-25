@@ -29,3 +29,15 @@ function fib(n) {
 }
 
 console.log(fib(7));
+
+// The following function is of the Lucas Sequence. This sequence is given a number
+// returns the next number in the sequence by adding up the sum of the previous two numbers.
+// In the case of the 0, the answer is 2, and in the case of 1, the answer is 1.
+
+// With the function, I made the base case for if n get 0, then return 2. the second base case
+// was if n is 1, return 1. From there, I wrote a recursive function.
+function lucasNumber(n) {
+  if (n === 0) return 2;
+  if (n === 1) return 1;
+  return lucasNumber(n - 1) + lucasNumber(n - 2);
+}
