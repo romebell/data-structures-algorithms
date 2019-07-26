@@ -41,3 +41,23 @@ function lucasNumber(n) {
   if (n === 1) return 1;
   return lucasNumber(n - 1) + lucasNumber(n - 2);
 }
+
+// This function reverses a string
+
+function reverseString(str) {
+  if (typeof str === 'string') {
+      str = str.split('');
+  }
+  if (str.length === 0) return '';
+  return str.pop() + reverseString(str);   
+}
+
+// This function calculates the base raised to to the exponent power
+
+function pow(base, exponent) {
+  if (exponent === 0) return 1;
+  if (exponent < 0) {
+      return (1/base) * pow(base, (exponent + 1));
+  }
+  return base * pow(base, (exponent - 1));
+}
